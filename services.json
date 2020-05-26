@@ -1,0 +1,56 @@
+{
+    "mongo":
+    {
+      "connectionString": "mongodb://localhost:27017/beam"
+    },
+    "telegram_bot":
+    {
+      "bot_token":""
+    },
+    "text_whitelist": [
+      ""
+    ],
+    "dictionary": {
+       "welcome": "Welcome to the Beam Tip Bot\nYour new wallet address is: <pre>%s</pre>. Please check /help for the full list of commands.",
+       "balance": "You have %s <b>Beam</b> in your wallet! To get tipping check out the commands at /help",
+       "incorrect_parametrs": "Remember, I'm just a bot. I don't quite understand what you want me to do, so take a look at the /help section and get tipping",
+       "incorrect_withdraw": "Please, use <pre>/withdraw [Beam address] [amount]</pre> to withdraw Beam to another wallet address.",
+       "deposit": "Here is your Beam Tip Bot address: <pre>%s</pre> Send some Beam here to get tipping.",
+       "help": "<b>Welcome to Beam Butler!</b>\n\n<b>My job is:</b>\n▲ To provide all the information you could possibly need relating to Beam\n▲ I'm also able to help you get tipping other valuable Beamers\n\nBelow is a list of commands that you can send to me, or to groups I'm in:\n \nCommands for getting info from Beam Butler:\n \n- get the current /price of Beam from the current list of exchanges\n- see the latest /chart for Beam prices in USDT, BTC or ETH\n- /compare Beam performance with other coins: Zcash, Grin, Monero, and Bitcoin\n- display all the information from the /explorer\n- miners can check out the /pools stats\n- explore /faq to know more about Beam\n\n<b>Commands for tipping with Beam Butler:</b>\n- In channels with Beam Butler:\n \n• send a tip to any user: /tip @[username] [amount]\n \n• send a tip to specific user by replying to his/her message with /tip [amount]\n\n- <b>Direct messaging to Beam Butler</b>:\n \n• send a /tip @[username] [amount] to any user\n \n• send an anonymous tip with /atip @[username] [amount]\n \n• check your /balance anytime\n \n• see the /deposit address for your Telegram-bound wallet\n \n• transfer your funds to a more secure walled  /withdraw [BeamAddress] [amount]\n\n• receive a free amount of beam coins to play around with /faucet [BeamAddress]\n\n• refill the faucet /tip @faucet [amount]\n\n<b>WARNING: </b>\n- Beam Butler is an experimental module, do not store large amounts in it!\n- Your funds are stored in a personal address, not in a personal wallet! It means, you can't have access the seed phrase or the wallet database.\n- We take no responsibility for any lost or stolen funds. By using Beam Butler Bot, you fully accept the risk.\nTo keep your Beam safe, we recommend using Beam desktop and mobile wallets.\n\n<b>For Fun</b>:\n• /envelope [amount] - sends a red envelope to the group, where everyone can open and share the Beam\n• /jackpot - this will send 0.1 to enter you into the twice daily jackpot, where the winner takes all \n• /jnotify - keeps you up to date with the jackpot rounds and winners\n • /jstop - stops the above notifications<b>Direct messaging Beam Butler</b>\n",
+       "tip_help": "<b>Below are the commands for tipping with Beam Butler</b>:\n\n<b>In channels with Beam Butler</b>: \n- Reply to a message with /tip [amount] to send that user a tip\n- Or send them a tip outside of a reply with /tip @[username] [amount]\n\n<b>Direct messaging Beam Butler</b>: \n- You can also send a /tip @[username] [amount] from here\n- Or you can send one anonymously with /atip @[username] [amount]\n- Check your /balance at anytime to see how many Beam you have\n- You can see your /deposit address, and send it some Beam for tipping\n- At any time you can /withdraw [BeamAddress] [amount] to a more secure wallet\n\n<b>WARNING</b>: Beam Tip Bot is experimental, do not store large sums in your address! Your Beam are stored in your personal address, not a personal wallet. For this reason there are no back up options for your wallet address. We take no responsibility for lost or stolen funds. By using Beam Butler Tip Bot, you accept the risk.",
+       "withdrawal_result": "<b>You withdrew %s Beam to</b>: <pre>%s</pre> ",
+       "incorrect_balance": "<b>You don't have enough Beam to send this transaction!</b>\n<b>Your balance is: %s Beam</b>",
+       "incorrect_amount": "Something isn't quite right with this command. Please check /help for the full list of commands.",
+       "username_error": "This username has not started using Beam Tip Bot! Please tell the user to message the bot with /start to get an address and get tipping",
+       "tip_received": "You received a %s <b>Beam tip</b> from <a href='tg://user?id=%s'>%s</a>. You must be doing something right!",
+       "tip_sent": "You sent a tip of <b>%s</b> Beams to <a href='tg://user?id=%s'>%s</a>",
+       "withdrawal_busy": "You have unconfirmed withdrawal. Please, wait for confirmations.",
+       "withdrawal_failed": "<b>Withdrawal failed. Try again in one minute...</b>"
+    },
+    "httpprovider": "http://127.0.0.1:10000/api/wallet",
+    "bitforex_timeframes": [
+        "1min",
+        "5min",
+        "15min",
+        "30min",
+        "1hour",
+        "2hour",
+        "4hour",
+        "12hour",
+        "1day",
+        "1week",
+        "1month"
+    ],
+    "sequence": [
+        "binance",
+        "Gateio",
+        "coinsuper",
+        "hotbit",
+        "bitforex",
+        "Big.One",
+        "tradeogre",
+        "bhex"
+    ],
+    "regex": "",
+    "regex_all": ""
+}
